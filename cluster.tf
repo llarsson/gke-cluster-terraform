@@ -62,7 +62,7 @@ resource "google_container_node_pool" "general_purpose" {
   node_config {
     machine_type = "${var.general_purpose_machine_type}"
 
-    metadata {
+    metadata = {
       disable-legacy-endpoints = "true"
     }
 
